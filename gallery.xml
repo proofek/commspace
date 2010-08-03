@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery frameColor="0x000000" frameWidth="0" imagePadding="0" displayTime="6" enableRightClickOpen="false">
+<image>
+   <url>images/1copy.jpg</url>
+   <caption><![CDATA[]]></caption>
+   <width>467</width>
+   <height>350</height>
+</image>
+<image>
+   <url>images/2copy.jpg</url>
+   <caption><![CDATA[]]></caption>
+   <width>467</width>
+   <height>350</height>
+</image>
+<image>
+   <url>images/3copy.jpg</url>
+   <caption><![CDATA[]]></caption>
+   <width>467</width>
+   <height>350</height>
+</image>
+<image>
+   <url>images/4copy.jpg</url>
+   <caption><![CDATA[]]></caption>
+   <width>467</width>
+   <height>350</height>
+</image>
+</gallery>
