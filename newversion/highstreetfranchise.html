@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Commspace</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commspace.css" />
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commspace_ie.css" />
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="content"><div id="subcontent">
+
+        <div id="container">
+            <div id="holder">
+                <div id="logo"></div>
+                <div id="links">
+                    <div id="links-content">
+                        <a href="index.html" id="menu">Home</a>
+                        <a href="about.html" id="menu">About Commspace</a>
+                        <a href="services.html" id="menu">Services</a>
+                        <a href="projects.html" id="current_menu">Projects</a>
+                        <a href="contact.html" id="menu">Contact</a>
+                    </div>
+                </div>
+                <div id="greystrip"></div>
+                <div id="clear"></div>
+            </div>
+        </div>
+
+        <div id="clear"></div>
+
+        <div id="container">
+            <div id="holder">
+                <div id="description_container">
+                    <div id="description">
+                        <p>Projects</p>
+                        <p>We have worked with a variety of clients in Poland, including some major
+                           European brands like House and Deutsche Bank. Our work included the design
+                           of a new store format and the subsequent roll-out across multiple locations,
+                           the re-branding and refurbishment of the existing retail chain, and the
+                           complex project management.
+                        </p>
+                        <p>Please select one of the categories below for more details:</p>
+                        <ul>
+                            <li><a href="highstreetretail.html" id="intext">High street retail unit</a></li>
+                            <li><a href="shoppingcentreretail.html" id="intext">Shopping centre retail unit</a></li>
+                            <li><a href="highstreetfranchise.html" id="intext">High street franchise outlet</a></li>
+                            <li><a href="projectmanagement.html" id="intext">Project management</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="frame">
+                    <div id="olsztyn"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clear"></div>
+
+        <div id="slogan"></div>
+    </div></div>
+
+<div id="clear"></div>
+
+<div id="thumbs">
+    <ul class="thumbs noscript">
+        <li>
+            <a class="thumb" href="images/fa.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fc.jpg"></a>
+        </li>
+<!-- >
+        <li>
+            <a class="thumb" href="images/2.jpg"></a>
+        </li>
+        <! -->
+    </ul>
+</div>
+
+<div id="clear"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Initialize Minimal Galleriffic Gallery
+    $('#thumbs').galleriffic({
+        imageContainerSel:      '#gallery',
+        delay:                     5000,
+        enableTopPager:            false,
+        enableBottomPager:         false,
+        autoStart:                 true,
+        renderSSControls:          false,
+        renderNavControls:         false,
+        enableKeyboardNavigation:  false
+    });
+});
+</script>
+</body>
+
+</html>

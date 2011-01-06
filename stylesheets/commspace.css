@@ -3,146 +3,28 @@ body {
     font-family: Verdana;
 }
 
-p {
+p,ul{
     font-family: Verdana;
     font-size: 12px;
     color: #aaaaaa;
+    text-align: justify;
+}
+
+/* for all browsers that understand min-width */
+#container {
+    position:relative;
+    width: 100%;
+    min-width:900px;
+}
+#holder {
+    display:block;
 }
 
 #clear {
-	clear: both;
+    clear: both;
 }
 
-#logo {
-    background-image: url('../images/commspace.jpg');
-    height: 104px;
-    width: 400px;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: 0px solid blue;
-	float: left;
-}
-
-#links {
-    height: 88px;
-	width: 1000px;
-    text-align: left;
-    border: 0px solid red;
-}
-
-#blackstrip {
-    height: 16px;
-	width: 100%;
-	background: #000000;
-	border: 0px solid blue;
-}
-
-#frame {
-	width: 100%;
-    height: 350px;
-	background: #000000;
-	border: 0px solid red;
-}
-
-#description {
-	width: 400px;
-	height: 300px;
-	background: #000000;
-	border: 1px solid blue;
-	float: left;
-}
-
-#gallery {
-	width: 200px;
-	height: 300px;
-	background: #000000;
-	border: 1px solid red;
-}
-
-#redstrip {
-    height: 3px;
-	width: 100%;
-	background: #ff0000;
-	border: 0px solid blue;
-}
-
-#slogan {
-    background-image: url('../images/slogan.jpg');
-    height: 50px;
-    width: 1000px;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: 0px solid blue;
-}
-
-#arb {
-    background-image: url('../images/arb.jpg');
-    height: 80px;
-    width: 1000px;
-    background-repeat: no-repeat;
-    background-position: left;
-    border: 0px solid blue;
-}
-/*
-#out {
-    width: 100%;
-    height: 100%;
-    border-spacing: 0px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px solid yellow;
-}
-
-#in {
-    width: 100%;
-    border-spacing: 0px;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    border: 0px solid yellow;
-}
-
-p {
-    font-family: Verdana;
-    font-size: 12px;
-    color: #aaaaaa;
-}
-
-#p {
-    font-family: Verdana;
-    font-size: 12px;
-    color: #aaaaaa;
-    text-align: left;
-}
-
-#title {
-    font-family: Verdana;
-    font-size: 12px;
-    color: #aaaaaa;
-    text-align: center;
-}
-#header {
-    height: 104px;
-    background: #555555;
-}
-
-#logo {
-    background-image: url('../images/logo.jpg');
-    height: 104px;
-    width: 400px;
-    border: 0px solid blue;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: 0px solid yellow;
-}
-
-#links {
-    height: 25px;
-    text-align: right;
-    padding-top: 65px;
-    border: 0px solid blue;
-}
-
+/* links */
 a#menu {
     font-family: Verdana;
     font-size: 16px;
@@ -159,96 +41,341 @@ a#current_menu {
     text-decoration: underline;
 }
 
-#description {
-    height: 357px;
-    background: #000000;
-    border: 0px solid white;
-}
-
-#gallery {
-    width: 100%;
-    height: 371px;
-    background: #000000;
-}
-
-#left {
-    width: 400px;
-    height: 459px;
-    border: 0px solid blue;
-    float:left;
-}
-
-#right {
-    height: 459px;
-    width: 600px;
-    float:left;
-}
-
-#blackstripe {
-    background: #000000;
-    height: 355px;
-}
-
-#logo_bottom {
-    height: 14px;
-    background: #000000;
-    width: 324px;
-    text-align: right;
-}
-
-#redline {
-    height: 3px;
-    background: red;
-    width: 819px;
-    /*clear: both;*/
-/*
-}
-
-#slogan {
-    height: 50px;
-    background-image: url('../images/slogan.jpg');
-    background-repeat: no-repeat;
-    background-position: right;
-    clear: both;
-}
-
-#create {
-    width: 400px;
-    height: 50px;
-    background-image: url('../images/create.jpg');
+/* buttons */
+#bdesign a {
+    width: 130px;
+    height: 43px;
+    background-image: url('../images/button1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     text-decoration: none;
+    display: block;
+    float: left;
 }
 
-#expand {
-    width: 400px;
-    height: 50px;
-    background-image: url('../images/expand.jpg');
+#bimprove a {
+    width: 130px;
+    height: 43px;
+    background-image: url('../images/button2.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    border: 0px solid red;
+    text-decoration: none;
+    display: block;
+    float: left;
 }
 
-#improve {
-    width: 400px;
-    height: 50px;
+#bmanage a {
+    width: 130px;
+    height: 43px;
+    background-image: url('../images/button3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#design a {
+    width: 250px;
+    height: 87px;
+    background-image: url('../images/design.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    left:50%;
+    margin-left:-125px;
+    position:absolute;
+}
+
+#manage a {
+    width: 250px;
+    height: 87px;
+    background-image: url('../images/manage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    left:50%;
+    margin-left:-125px;
+    position:absolute;
+}
+
+#improve a {
+    width: 250px;
+    height: 87px;
     background-image: url('../images/improve.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    text-decoration: none;
+    left:50%;
+    margin-left:-125px;
+    position:absolute;
+}
+
+#bkg_olsztyn {
+    width: 260px;
+    height: 520px;;
+    background-image: url('../images/cs2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#cs_full_bkg {
+    width: 520px;
+    height: 520px;
+    background-image: url('../images/ttt.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#cs_bkg {
+    width: 260px;
+    height: 520px;;
+    background-image: url('../images/cs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_color1 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_col.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_black1 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_black.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_color2 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_col.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_black2 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_black.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_color3 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_col.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.service_black3 {
+    width: 173px;
+    height: 520px;;
+    background-image: url('../images/services_manage_black.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#cs_description {
+    margin: 55px 10px 10px 10px;
+}
+
+#cs_description_full {
+    margin: 55px 10px 10px 270px;
+}
+
+#logo {
+    background-image: url('../images/commspace.jpg');
+    height: 104px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 0px solid blue;
+    float: left;
+}
+
+#links {
+    height: 88px;
+    position: relative;
+    border: 0px solid red;
+    loat: left;
+}
+
+#links-content {
+    text-align: left;
+    border: 0px solid red;
+    position: absolute;
+    margin-left: 430px;
+    bottom: 5px;
+}
+
+#blackstrip {
+    height: 16px;
+    width: 100%;
+    background: #000000;
+    border: 0px solid blue;
+}
+
+#description_container {
+    width: 440px;
+    height: 520px;
+    background: #000000;
+    border: 0px solid red;
+    float: left;
+}
+
+#description {
+    width: 400px;
+    height: 520px;
+    background: #000000;
+    border: 0px solid blue;
+    float: left;
+    margin: 0px 20px 0px 20px;
+}
+
+#frame {
+    width: 100%;
+    height: 520px;
+    background: #000000;
+    border: 1px solid red;
+}
+
+#gallery {
+    height: 520px;
+    width: 100%;
+    text-align: left;
+    background: #000000;
     border: 0px solid red;
 }
 
-#arb {
-    height: 100px;
-    background-image: url('../images/arb_cmyk.gif');
-    background-repeat: no-repeat;
-    background-position: left bottom;
+#redstrip {
+    height: 3px;
+    width: 100%;
+    background: #ff0000;
+    border: 0px solid blue;
 }
 
-#arb_member {
+#slogan {
+    background-image: url('../images/slogan.jpg');
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 0px solid blue;
+}
+
+/* galleric configuration */
+
+#thumbs {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    border: 1px solid blue;
+}
+
+div#gallery img {
+    vertical-align: middle;
+    border: none;
+    width: 450px;
+    height: 415px;
+}
+
+/*
+p,ul {
     font-family: Verdana;
     font-size: 12px;
+    color: #aaaaaa;
+	text-align: justify;
 }
 
+p,ol {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #aaaaaa;
+    text-align: justify;
+}
+
+#header_container {
+    min-width: 1250px;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+#frame_long {
+	width: 100%;
+    height: 700px;
+	background: #000000;
+	border: 0px solid red;
+}
+
+#description_long {
+    width: 400px;
+    height: 700px;
+    background: #000000;
+    border: 0px solid blue;
+    float: left;
+    margin: 0px 20px 0px 20px;
+}
+
+#arb {
+    background-image: url('../images/arb.jpg');
+    height: 80px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: 0px solid blue;
+}
+
+#case1, #case2, #case3, #case4 {
+    font-family: Verdana;
+    font-size: 12px;
+    color: yellow;
+    cursor: pointer;
+}
+
+#case1:hover, #case2:hover, #case3:hover, #case4:hover {
+    font-family: Verdana;
+    font-size: 12px;
+    color: yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#case1desc, #case2desc, #case3desc, #case4desc {
+    display: none;
+}
 */

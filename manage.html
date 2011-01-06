@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Commspace</title>
+
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+	<script type="text/javascript" src="js/galleria/galleria.js"></script>
+	<script type="text/javascript" >Galleria.loadTheme('js/galleria/themes/dots/galleria.dots.js');</script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commspace.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/jScrollPane.css" />
+</head>
+
+<body>
+
+<div id="logo"></div>
+<div id="links">
+	<div id="links-content">
+		<a href="/" id="menu">Home</a>
+		<a href="/about.html" id="menu">About Commspace</a>
+		<a href="/services.html" id="current_menu">Services</a>
+		<a href="/projects.html" id="menu">Projects</a>
+		<a href="/contact.html" id="menu">Contact</a>
+	</div>
+</div>
+<div id="blackstrip"></div>
+<div id="clear"></div>
+<div id="description">
+	<p>Installation management</p>
+	<p id="title">EXPAND</p>
+	<ul>
+		<li>Advice on builders, trade contractors and  firms to be invited to submit tenders</li>
+		<li>Preparing documents for tendering purposes</li>
+		<li>Co-ordinating execution of works to be carried out by trade contractors</li>
+		<li>Working with clients' in-house designers, project managers and quantity surveyors</li>
+		<li>A complex design consultancy for U.K. companies planning to expand onto Polish market</li>
+	</ul>
+</div>
+<div id="frame">
+	<div id="gallery"></div>
+</div>
+<div id="clear"></div>
+<div id="redstrip"></div>
+<div id="slogan"></div>
+<div id="arb"></div>
+
+<script type="text/javascript" >
+	var data = [{
+		image: 'images/1copy.jpg'
+	}, {
+		image: 'images/2copy.jpg'
+	}];
+
+    $('#gallery').galleria({
+		data_source: data,
+		autoplay: true,
+		thumbnails: false,
+		transition: 'fade',
+		height: '450',
+		show_imagenav: false,
+		show_counter: false,
+		image_position: 'left',
+		carousel: false,
+		image_crop: 'height'
+	});
+</script>
+</body>
+
+</html>

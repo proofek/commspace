@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Commspace</title>
+
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+	<script type="text/javascript" src="js/galleria/galleria.js"></script>
+	<script type="text/javascript" >Galleria.loadTheme('js/galleria/themes/dots/galleria.dots.js');</script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commspace.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/jScrollPane.css" />
+</head>
+
+<body>
+
+<div id="logo"></div>
+<div id="links">
+	<div id="links-content">
+		<a href="/" id="menu">Home</a>
+		<a href="/about.html" id="menu">About Commspace</a>
+		<a href="/services.html" id="menu">Services</a>
+		<a href="/projects.html" id="current_menu">Projects</a>
+		<a href="/contact.html" id="menu">Contact</a>
+	</div>
+</div>
+<div id="blackstrip"></div>
+<div id="clear"></div>
+<div id="description_long">
+    <p><a href="">Home</a> > <a href="">Projects</a> > <a href="">This project spec</a></p>
+	<<p>House is a clothing brand which currently has 290 stores in 11 European countries.
+          This project called for the transformation of a small space within a former casino
+          into a retail space suitable for a boutique. Although not listed,
+          this 19th century building is located in a heart of conservation area
+          within a UNESCO World Heritage Site and as such required a very
+          respectful design approach on all project stages. The long list of
+          strict requirements from the city's conservator, local building control
+          and the building's inhabitants had to be met both during design
+          and construction processes.<img src="images/1.jpg" />The successful space planning was achieved
+          through the demolition of internal load bearing walls on the ground
+          floor level which allowed the separated spaces to be opened up and
+          interlinked in order to maximise the sales area. In addition to the complex
+          internal fit-out works, the programme also included  the renovation of the facade,
+          the replacement of all external windows, the re-positioning of
+          an existing cash machine and the installation of new signage.
+          The project was successfully completed on time and within budget,
+          meeting challenging time lines which were necessitated due
+          to the start of the peak shopping season.</p>
+</div>
+<div id="frame_long">
+
+</div>
+<div id="clear"></div>
+<div id="redstrip"></div>
+<div id="slogan"></div>
+
+<script type="text/javascript" >
+var data = [{
+    image: 'images/mapa.jpg'
+}, {
+    image: 'images/1.jpg'
+}, {
+    image: 'images/2.jpg'
+}, {
+    image: 'images/3.jpg'
+}, {
+    image: 'images/4.jpg'
+}, {
+    image: 'images/5.jpg'
+}, {
+    image: 'images/6.jpg'
+}, {
+    image: 'images/7.jpg'
+}, {
+    image: 'images/8.jpg'
+}, {
+    image: 'images/9.jpg'
+}, {
+    image: 'images/10.jpg'
+}, {
+    image: 'images/11.jpg'
+}];
+
+    $('#gallery').galleria({
+		data_source: data,
+		autoplay: true,
+		thumbnails: false,
+		transition: 'fade',
+		height: '530',
+		show_imagenav: false,
+		show_counter: false,
+		image_position: 'left',
+		carousel: false,
+		image_crop: 'height'
+	});
+</script>
+</body>
+
+</html>

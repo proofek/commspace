@@ -1,0 +1,57 @@
+/* method 2 a bodge for IE browsers IE5.01, IE5.5 and IE6 */
+
+#container {
+    border-right:1040px solid #fff;
+}
+
+#holder {
+    float:left;
+    position:relative;
+    margin-right:-1040px;
+}
+
+#logo {
+    background-image: url('../images/logo-1.jpg');
+    height: 80px;
+    width: 520px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 0px solid red;
+    float: left;
+    margin-right: -3px;
+}
+
+#greystrip {
+    background-image: url('../images/greyline.jpg');
+    height: 20px;
+    width: 520px;
+    background-repeat: repeat-x;
+    border: 0px solid black;
+    margin-left: 0px;
+}
+
+#description_container {
+    width: 520px;
+    height: 520px;
+    background: #000000;
+    border: 0px solid red;
+    float: left;
+    margin-right: -3px;
+}
+
+#description {
+    width: 490px;
+    height: 510px;
+    background: #000000;
+    border: 0px solid blue;
+    float: left;
+    margin: 10px 10px 0px 7px;
+}
+
+#links-content {
+    text-align: left;
+    border: 0px solid green;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 0px;
+}
