@@ -33,7 +33,7 @@
 #description_container {
     width: 520px;
     height: 520px;
-    background: #000000;
+    background: #f2f0f0;
     border: 0px solid red;
     float: left;
     margin-right: -3px;
@@ -42,7 +42,7 @@
 #description {
     width: 490px;
     height: 510px;
-    background: #000000;
+    background: #f2f0f0;
     border: 0px solid blue;
     float: left;
     margin: 10px 10px 0px 7px;

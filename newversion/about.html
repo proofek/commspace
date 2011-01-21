@@ -2,6 +2,8 @@
 
 <head>
     <title>Commspace</title>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/commspace.css" />
     <!--[if IE 6]>
     <link rel="stylesheet" type="text/css" href="stylesheets/commspace_ie.css" />
@@ -16,13 +18,11 @@
             <div id="holder">
                 <div id="logo"></div>
                 <div id="links">
-                    <div id="links-content">
                         <a href="index.html" id="menu">Home</a>
                         <a href="about.html" id="current_menu">About</a>
                         <a href="services.html" id="menu">Services</a>
                         <a href="projects.html" id="menu">Projects</a>
                         <a href="contact.html" id="menu">Contact</a>
-                    </div>
                 </div>
                 <div id="greystrip"></div>
                 <div id="clear"></div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div id="frame">
-                    <div id="fc"></div>
+                    <div id="gallery" class="gallery"></div>
                 </div>
             </div>
         </div>
@@ -66,8 +66,75 @@
         <div id="clear"></div>
 
         <div id="slogan"></div>
+
+        <div id="copyrights">&copy;2010-2011 commspace <a href="resources/commspace_privacy_policy.pdf" id="privacy">Privacy policy</a></div>
     </div></div>
 
+<div id="thumbs">
+    <ul class="thumbs noscript">
+        <li>
+            <a class="thumb" href="images/fa.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fb.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fc.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fd.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fe.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/ff.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fg.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fh.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fi.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fk.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fm.jpg"></a>
+        </li>
+    </ul>
+</div>
+
+<div id="clear"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Initialize Minimal Galleriffic Gallery
+    $('#thumbs').galleriffic({
+        imageContainerSel:      '#gallery',
+        delay:                     5000,
+        enableTopPager:            false,
+        enableBottomPager:         false,
+        autoStart:                 true,
+        renderSSControls:          false,
+        renderNavControls:         false,
+        enableKeyboardNavigation:  false
+    });
+});
+</script>
 </body>
 
 </html>
