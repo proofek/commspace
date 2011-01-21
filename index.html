@@ -2,109 +2,138 @@
 
 <head>
     <title>Commspace</title>
-
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="js/jScrollPane.js"></script>
-	<script type="text/javascript" src="js/galleria/galleria.js"></script>
-	<script type="text/javascript" >Galleria.loadTheme('js/galleria/themes/dots/galleria.dots.js');</script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/commspace.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/jScrollPane.css" />
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commspace_ie.css" />
+    <![endif]-->
 </head>
 
 <body>
 
-<div id="logo"></div>
-<div id="links">
-	<div id="links-content">
-		<a href="/" id="current_menu">Home</a>
-		<a href="/about.html" id="menu">About Commspace</a>
-		<a href="/services.html" id="menu">Services</a>
-		<a href="/projects.html" id="menu">Projects</a>
-		<a href="/contact.html" id="menu">Contact</a>
-	</div>
-</div>
-<div id="blackstrip"></div>
-<div id="clear"></div>
-<div id="description">
-    <div id="bdesign"><a href="/design.html"></a></div>
-    <div id="bimprove"><a href="/improve.html"></a></div>
-    <div id="bmanage"><a href="/manage.html"></a></div>
-    <div id="clear"></div>
-    <p>Welcome to Commspace!</p>
-    <p>Commspace are UK commercial architects who specialise in architectural,
-       interior and fit-out design within Poland.  We work with international brands
-       that are looking to establish a presence in Poland or
-       expand their existing operations within the country.</p>
-    <p>We help our clients to translate their vision into reality and
-       to ensure their commercial space is aligned with their brand
-       and corporate strategy.</p>
-    <p>We work with clients from a variety of sectors including Retail,
-       Leisure, Finance and Food and Drink.  Our typical client is multi-site,
-       international and high growth, looking to enter or
-       expand their presence in the Polish market.
-       We work on projects of varying scope and size, ranging from
-       a single high street retail unit to a nationwide expansion project.
-       We have the capability to handle complex and accelerated roll outs,
-       working independently, with a selected group of associates or
-       with the client's in-house team.</p>
-	<p>We are uniquely positioned to help our clients succeed in the Polish market as a result of:
-		<ul>
-			<li>Our Polish links with building contractors, specialist consultants
-			    and manufacturers, and our knowledge and experience of the Polish marketplace.</li>
-			<li>Our experience within the UK design and construction market working
-			    with major UK and international brands.</li>
-			<li>Our technical and creative skills developed from 60 client engagements
-			    in the UK and Poland across multiple sectors.</li>
-		</ul>
-	</p>
-</div>
-<div id="frame">
-	<div id="gallery"></div>
-</div>
-<div id="clear"></div>
-<div id="redstrip"></div>
-<div id="slogan"></div>
+    <div id="content"><div id="subcontent">
 
-<script type="text/javascript" >
-	var data = [{
-		image: 'images/mapa.jpg'
-	}, {
-		image: 'images/1.jpg'
-	}, {
-        image: 'images/2.jpg'
-    }, {
-        image: 'images/3.jpg'
-    }, {
-        image: 'images/4.jpg'
-    }, {
-        image: 'images/5.jpg'
-    }, {
-        image: 'images/6.jpg'
-    }, {
-        image: 'images/7.jpg'
-    }, {
-        image: 'images/8.jpg'
-    }, {
-        image: 'images/9.jpg'
-    }, {
-        image: 'images/10.jpg'
-    }, {
-        image: 'images/11.jpg'
-    }];
+        <div id="container">
+            <div id="holder">
+                <div id="logo"></div>
+                <div id="links">
+                        <a href="index.html" id="current_menu">Home</a>
+                        <a href="about.html" id="menu">About</a>
+                        <a href="services.html" id="menu">Services</a>
+                        <a href="projects.html" id="menu">Projects</a>
+                        <a href="contact.html" id="menu">Contact</a>
+                </div>
+                <div id="greystrip"></div>
+                <div id="clear"></div>
+            </div>
+        </div>
 
-    $('#gallery').galleria({
-		data_source: data,
-		autoplay: true,
-		thumbnails: false,
-		transition: 'fade',
-		height: '530',
-		show_imagenav: false,
-		show_counter: false,
-		image_position: 'left',
-		carousel: false,
-		image_crop: 'height'
-	});
+        <div id="clear"></div>
+
+        <div id="container">
+            <div id="holder">
+                <div id="description_container">
+                    <div id="description">
+                        <p>Welcome to Commspace!</p>
+                        <p>Commspace are UK commercial architects who specialise in architectural,
+                           interior and fit-out design within Poland.  We work with international brands
+                           that are looking to establish a presence in Poland or
+                           expand their existing operations within the country.</p>
+                        <p>We help our clients to translate their vision into reality and
+                           to ensure their commercial space is aligned with their brand
+                           and corporate strategy.</p>
+                        <p>We work with clients from a variety of sectors including Retail,
+                           Leisure, Finance and Food and Drink.</p>
+                        <p>Our typical client is multi-site,
+                           international and high growth, looking to enter or
+                           expand their presence in the Polish market.
+                           We work on projects of varying scope and size, ranging from
+                           a single high street retail unit to a nationwide expansion project.</p>
+                        <p>We have the capability to handle complex and accelerated roll outs,
+                           working independently, with a selected group of specialist consultants
+                           or with the client's in-house team.</p>
+                    </div>
+                </div>
+                <div id="frame">
+                    <div id="gallery" class="gallery"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clear"></div>
+
+        <div id="slogan"></div>
+
+        <div id="copyrights">&copy;2010-2011 commspace <a href="resources/commspace_privacy_policy.pdf" id="privacy">Privacy policy</a></div>
+    </div></div>
+
+<div id="clear"></div>
+
+<div id="thumbs">
+    <ul class="thumbs noscript">
+        <li>
+            <a class="thumb" href="images/fa.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fb.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fc.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fd.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fe.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/ff.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fg.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fh.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fi.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fk.jpg"></a>
+        </li>
+
+        <li>
+            <a class="thumb" href="images/fm.jpg"></a>
+        </li>
+    </ul>
+</div>
+
+<div id="clear"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Initialize Minimal Galleriffic Gallery
+    $('#thumbs').galleriffic({
+        imageContainerSel:      '#gallery',
+        delay:                     5000,
+        enableTopPager:            false,
+        enableBottomPager:         false,
+        autoStart:                 true,
+        renderSSControls:          false,
+        renderNavControls:         false,
+        enableKeyboardNavigation:  false
+    });
+});
 </script>
 </body>
 
