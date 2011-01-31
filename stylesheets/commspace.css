@@ -204,7 +204,7 @@ a#privacy:hover {
     width: 520px;
     height: 520px;
     background: #3b3b3d;
-    border: 0px solid red;
+    border: 0px solid blue;
     float: left;
 }
 
@@ -323,6 +323,6 @@ div.gallery a.advance-link:hover, div.gallery a.advance-link:active, div.gallery
 div#gallery img {
     border: none;
     width: 514px;
-    height: 519px;
+    height: 517px;
     border: 0px solid blue;
 }

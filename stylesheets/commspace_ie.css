@@ -11,7 +11,7 @@
 }
 
 #logo {
-    background-image: url('../images/logo-1.jpg');
+    background-image: url('../images/logo.jpg');
     height: 80px;
     width: 520px;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 #description_container {
     width: 520px;
     height: 520px;
-    background: #f2f0f0;
+    background: #3b3b3d;
     border: 0px solid red;
     float: left;
     margin-right: -3px;
@@ -42,16 +42,19 @@
 #description {
     width: 490px;
     height: 510px;
-    background: #f2f0f0;
+    background: #3b3b3d;
     border: 0px solid blue;
     float: left;
     margin: 10px 10px 0px 7px;
 }
 
-#links-content {
-    text-align: left;
-    border: 0px solid green;
-    position: absolute;
-    bottom: 5px;
-    margin-left: 0px;
+#links {
+    width: 520px;
+    height: 20px;
+    position: relative;
+    border: 0px solid purple;
+    margin-left: 520px;
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 2px;
 }
